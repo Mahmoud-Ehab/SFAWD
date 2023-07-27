@@ -1,2 +1,2 @@
 # About
-SFA is a general purpose web application architecture that attempts to delineate a general solution for typical problems appertain to web software development... [read more](https://moehab.substack.com/p/storage-facilities-architecture)
+SFAWD (Storage-Facilites Architecture for web developement) is a general purpose architecture that attempts to delineate a general solution for typical problems appertain to web software development... [read more](https://moehab.substack.com/p/storage-facilities-architecture)
