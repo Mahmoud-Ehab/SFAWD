@@ -1,4 +1,6 @@
-import { AppState, Controller, Entity } from ".";
+import { AppState } from "./Storage/AppState";
+import { Entity } from "./Storage/Entity";
+import { Controller } from "./Storage/Controller";
 
 type AnyEntity = Entity<any, any, any>;
 

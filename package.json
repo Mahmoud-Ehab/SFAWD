@@ -1,8 +1,10 @@
 {
   "name": "sfawd",
-  "version": "0.0.1",
+  "version": "0.0.1-ts-fixed-v2",
   "description": "Storage-Facility Architecture for web application development.",
-  "main": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "rollup --config",
