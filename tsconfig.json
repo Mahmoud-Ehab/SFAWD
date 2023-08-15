@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true  
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./dist"
   }
 }
