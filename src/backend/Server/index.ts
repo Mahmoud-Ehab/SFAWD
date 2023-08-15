@@ -2,13 +2,25 @@ import { QueryStrategy } from "./QueryStrategy";
 import { RouterInitializer } from "./RouterInitializer";
 import { Server } from "./Server";
 
-import * as util from "./Storage";
-import * as responses from "./Responses";
+import {
+    Endpoint,
+    Handler,
+    Response,
+    Request,
+    Router,
+    ServerApp
+} from "./Storage";
+import * as Responses from "./Responses";
 
 export {
     QueryStrategy,
     RouterInitializer,
     Server,
-    util,
-    responses
+    Endpoint,
+    Handler,
+    Response,
+    Request,
+    Router,
+    ServerApp,
+    Responses
 }

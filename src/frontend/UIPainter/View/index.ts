@@ -4,6 +4,9 @@ import { ViewDrawer } from "./Storage/ViewDrawer";
 import { ConstructiveView } from "./ConstructiveView";
 import { InteractiveView } from "./InteractiveView";
 import { AestheticView } from "./AestheticView";
+import { ViewAnimation } from "./Storage/ViewAnimation";
+import { ViewAnimator } from "./ViewAnimator";
+import { ExtendedView } from "./Storage/ExtendedView";
 
 export {
   View,
@@ -11,5 +14,8 @@ export {
   ViewDrawer,
   ConstructiveView,
   InteractiveView,
-  AestheticView
+  AestheticView,
+  ViewAnimation,
+  ViewAnimator,
+  ExtendedView
 }

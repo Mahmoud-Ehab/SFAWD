@@ -1,15 +1,117 @@
-import * as Database from "./backend/Database"
-import * as Server from "./backend/Server"
-import * as RequestDispatcher from "./frontend/RequestDispatcher"
-import * as StateManager from "./frontend/StateManager"
-import * as UIPainter from "./frontend/UIPainter"
+import { 
+    DataController,
+    QueryManager,
+    QueryConfig,
+    QueryGenerator,
+    QueryHandler,
+    QueryResult
+} from "./backend/Database"
+
+
+import {
+    QueryStrategy,
+    RouterInitializer,
+    Server,
+    Endpoint,
+    Handler,
+    Response,
+    Request,
+    Router,
+    ServerApp,
+    Responses
+} from "./backend/Server"
+
+
+import {
+    Builder,
+    Dispatcher,
+    Endpoint as RD_Endpoint, 
+    Proxy, 
+    Headers,
+    Request as RD_Request,
+    Response as RD_Response
+} from "./frontend/RequestDispatcher"
+
+
+import {
+    StateManager,
+    SingleState,
+    ListState,
+    StateFactory,
+    Controller,
+    Entity,
+    AppState
+} from "./frontend/StateManager"
+
+
+import {
+    Screen,
+    UIApp,
+    View,
+    ViewData,
+    ViewDrawer,
+    ConstructiveView,
+    InteractiveView,
+    AestheticView,
+    ViewAnimation,
+    ViewAnimator,
+    ExtendedView
+} from "./frontend/UIPainter"
 
 export declare module SFAWD {
     export {
-        Database,
+        DataController,
+        QueryManager,
+        QueryConfig,
+        QueryGenerator,
+        QueryHandler,
+        QueryResult
+    }
+
+    export {
+        QueryStrategy,
+        RouterInitializer,
         Server,
-        RequestDispatcher,
+        Endpoint,
+        Handler,
+        Response,
+        Request,
+        Router,
+        ServerApp,
+        Responses
+    }
+
+    export {
+        Builder,
+        Dispatcher,
+        RD_Endpoint, 
+        Proxy, 
+        Headers,
+        RD_Request,
+        RD_Response
+    }
+
+    export {
         StateManager,
-        UIPainter
+        SingleState,
+        ListState,
+        StateFactory,
+        Controller,
+        Entity,
+        AppState
+    }
+
+    export {
+        Screen,
+        UIApp,
+        View,
+        ViewData,
+        ViewDrawer,
+        ConstructiveView,
+        InteractiveView,
+        AestheticView,
+        ViewAnimation,
+        ViewAnimator,
+        ExtendedView
     }
 }

@@ -1,9 +1,27 @@
 import { Screen } from "./Screen";
 import { UIApp } from "./UIApp";
-import * as View from "./View";
+import {
+    View,
+    ViewData,
+    ViewDrawer,
+    ConstructiveView,
+    InteractiveView,
+    AestheticView,
+    ViewAnimation,
+    ViewAnimator,
+    ExtendedView
+} from "./View";
 
 export {
     Screen,
     UIApp,
-    View
+    View,
+    ViewData,
+    ViewDrawer,
+    ConstructiveView,
+    InteractiveView,
+    AestheticView,
+    ViewAnimation,
+    ViewAnimator,
+    ExtendedView
 }

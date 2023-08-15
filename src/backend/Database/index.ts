@@ -1,10 +1,17 @@
 import { DataController } from "./DataController";
 import { QueryManager } from "./QueryManager";
-
-import * as util from "./Storage";
+import { 
+    QueryConfig,
+    QueryGenerator,
+    QueryHandler,
+    QueryResult
+ } from "./Storage";
 
 export {
     DataController,
     QueryManager,
-    util
+    QueryConfig,
+    QueryGenerator,
+    QueryHandler,
+    QueryResult
 }

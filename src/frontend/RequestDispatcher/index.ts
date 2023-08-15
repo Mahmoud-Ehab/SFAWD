@@ -1,10 +1,20 @@
 import { Builder } from "./Builder";
 import { Dispatcher } from "./Dispatcher";
 
-import * as util from "./Storage";
+import {
+    Endpoint, 
+    Proxy, 
+    Headers,
+    Request,
+    Response
+} from "./Storage";
 
 export {
     Builder,
     Dispatcher,
-    util
+    Endpoint, 
+    Proxy, 
+    Headers,
+    Request,
+    Response
 }
