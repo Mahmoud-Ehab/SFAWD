@@ -58,60 +58,58 @@ import {
     ExtendedView
 } from "./frontend/UIPainter"
 
-export declare module SFAWD {
-    export {
-        DataController,
-        QueryManager,
-        QueryConfig,
-        QueryGenerator,
-        QueryHandler,
-        QueryResult
-    }
+export {
+    DataController,
+    QueryManager,
+    QueryConfig,
+    QueryGenerator,
+    QueryHandler,
+    QueryResult
+}
 
-    export {
-        QueryStrategy,
-        RouterInitializer,
-        Server,
-        Endpoint,
-        Handler,
-        Response,
-        Request,
-        Router,
-        ServerApp,
-        Responses
-    }
+export {
+    QueryStrategy,
+    RouterInitializer,
+    Server,
+    Endpoint,
+    Handler,
+    Response,
+    Request,
+    Router,
+    ServerApp,
+    Responses
+}
 
-    export {
-        Builder,
-        Dispatcher,
-        RD_Endpoint, 
-        Proxy, 
-        Headers,
-        RD_Request,
-        RD_Response
-    }
+export {
+    Builder,
+    Dispatcher,
+    RD_Endpoint, 
+    Proxy, 
+    Headers,
+    RD_Request,
+    RD_Response
+}
 
-    export {
-        StateManager,
-        SingleState,
-        ListState,
-        StateFactory,
-        Controller,
-        Entity,
-        AppState
-    }
+export {
+    StateManager,
+    SingleState,
+    ListState,
+    StateFactory,
+    Controller,
+    Entity,
+    AppState
+}
 
-    export {
-        Screen,
-        UIApp,
-        View,
-        ViewData,
-        ViewDrawer,
-        ConstructiveView,
-        InteractiveView,
-        AestheticView,
-        ViewAnimation,
-        ViewAnimator,
-        ExtendedView
-    }
+export {
+    Screen,
+    UIApp,
+    View,
+    ViewData,
+    ViewDrawer,
+    ConstructiveView,
+    InteractiveView,
+    AestheticView,
+    ViewAnimation,
+    ViewAnimator,
+    ExtendedView
 }

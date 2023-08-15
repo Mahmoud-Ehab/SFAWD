@@ -1,6 +1,6 @@
 {
   "name": "sfawd",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Storage-Facility Architecture for web application development.",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
