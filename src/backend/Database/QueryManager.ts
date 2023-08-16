@@ -12,8 +12,20 @@ export abstract class QueryManager {
   // shall be defined in "connect" method implementations.
   protected controllers: Controllers = {};
 
+  protected controllersTypesList: Array<{
+    tablename: string,
+    controller: typeof DataController<object>
+  }>;
+
   getController(type: keyof Controllers) {
     return this.controllers[type];
+  }
+
+  public addContoller(tablename: string, controller: typeof DataController<object>) {
+    this.controllersTypesList.push({
+      tablename,
+      controller
+    });
   }
 
   protected connect(): Promise<void> {
