@@ -12,7 +12,7 @@ export abstract class QueryManager {
   // shall be defined in "connect" method implementations.
   protected controllers: Controllers = {};
 
-  protected controllersTypesList: Array<{
+  protected controllersInfoList: Array<{
     tablename: string,
     controller: typeof DataController<object>
   }>;
@@ -22,7 +22,7 @@ export abstract class QueryManager {
   }
 
   public addContoller(tablename: string, controller: typeof DataController<object>) {
-    this.controllersTypesList.push({
+    this.controllersInfoList.push({
       tablename,
       controller
     });
