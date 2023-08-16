@@ -17,6 +17,11 @@ export abstract class QueryManager {
     controller: typeof DataController<object>
   }>;
 
+  constructor() {
+    this.controllers = {};
+    this.controllersInfoList = [];
+  }
+
   getController(type: keyof Controllers) {
     return this.controllers[type];
   }
