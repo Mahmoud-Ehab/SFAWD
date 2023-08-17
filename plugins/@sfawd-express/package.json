@@ -1,11 +1,10 @@
 {
   "name": "@sfawd/express",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Nodejs Express implementation for SFAWD architecture.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/types",
-  "type": "module",
   "publishConfig": {
     "access": "public"
   },
