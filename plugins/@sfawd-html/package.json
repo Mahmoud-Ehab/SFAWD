@@ -1,0 +1,33 @@
+{
+  "name": "@sfawd/html",
+  "version": "1.1.2",
+  "description": "html UIPainter implementation for SFAWD architecture.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build-components": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SFAWD"
+  ],
+  "author": "Mahmoud E. Abdelsalam",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.0",
+    "rollup": "^3.28.0",
+    "tslib": "^2.6.1"
+  },
+  "dependencies": {
+    "serve-handler": "^6.1.5",
+    "sfawd": "^1.0.1"
+  }
+}

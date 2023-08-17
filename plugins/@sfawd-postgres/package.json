@@ -1,0 +1,33 @@
+{
+  "name": "@sfawd/postgres",
+  "version": "1.0.6",
+  "description": "postgres implementation for SFAWD architecture.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SFAWD"
+  ],
+  "author": "Mahmoud E. Abdelsalam",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.2",
+    "sfawd": "^1.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.0",
+    "@types/pg": "^8.10.2",
+    "rollup": "^3.28.0",
+    "tslib": "^2.6.1"
+  }
+}
