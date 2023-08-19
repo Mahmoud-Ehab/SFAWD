@@ -34,7 +34,7 @@ import {
 
 
 import {
-    StateManager,
+    stateManager,
     SingleState,
     ListState,
     StateFactory,
@@ -92,7 +92,7 @@ export {
 }
 
 export {
-    StateManager,
+    stateManager,
     SingleState,
     ListState,
     StateFactory,
