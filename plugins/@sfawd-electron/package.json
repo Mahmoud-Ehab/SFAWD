@@ -1,0 +1,16 @@
+{
+  "name": "@sfawd/electron",
+  "version": "1.0.0",
+  "description": "Electron.js implementation for SFAWD architecture.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mahmoud E. Abdelsalam",
+  "license": "MIT",
+  "dependencies": {
+    "@sfawd/html": "^1.1.2",
+    "electron": "^26.0.0",
+    "sfawd": "^1.0.5"
+  }
+}
