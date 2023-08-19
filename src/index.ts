@@ -40,7 +40,8 @@ import {
     StateFactory,
     Controller,
     Entity,
-    AppState
+    AppState,
+    StateLoader
 } from "./frontend/StateManager"
 
 
@@ -95,6 +96,7 @@ export {
     SingleState,
     ListState,
     StateFactory,
+    StateLoader,
     Controller,
     Entity,
     AppState
