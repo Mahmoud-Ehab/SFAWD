@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "serve-handler": "^6.1.5",
-    "sfawd": "^1.0.6"
+    "sfawd": "^1.0.8"
   }
 }

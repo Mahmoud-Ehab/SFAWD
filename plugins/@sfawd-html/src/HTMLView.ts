@@ -1,4 +1,4 @@
-import { StateManager, View } from "sfawd";
+import { stateManager, View } from "sfawd";
 import { HTMLDrawer } from "./HTMLDrawer";
 import { MediaQuery } from "./MediaQuery";
 
@@ -22,12 +22,12 @@ export class HTMLView extends View<HTMLData, HTMLStyle> {
   constructor(data: HTMLData, style: HTMLStyle, drawer: HTMLDrawer) {
     super(data, style, drawer);
     
-    if (StateManager.get("lang")) {
-      this.lang = StateManager.get("lang").toObject().value;
+    if (stateManager.get("lang")) {
+      this.lang = stateManager.get("lang").toObject().value;
     }
 
-    if (StateManager.get("mediaQuery")) {
-      this.mq = StateManager.get("mediaQuery").toObject().value;
+    if (stateManager.get("mediaQuery")) {
+      this.mq = stateManager.get("mediaQuery").toObject().value;
     }
 
     this.dirpath = "./views";

@@ -1,5 +1,4 @@
-import { StateManager } from "sfawd";
-import { StateLoader } from "sfawd/dist/frontend/StateManager/StateLoader";
+import { StateManager, StateLoader } from "sfawd";
 
 export class HTMLStateLoader extends StateLoader {
     getData(): object {
