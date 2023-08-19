@@ -3,5 +3,6 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist"
-  }
+  },
+  "exclude": ["plugins"]
 }
