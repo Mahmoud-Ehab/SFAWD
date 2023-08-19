@@ -30,14 +30,12 @@ export class ElectronApp implements UIApp<ElectronScreen> {
     }
 
     start(callback: Function, windowOptions?: Electron.BrowserWindowConstructorOptions): void {
-        this.window = new BrowserWindow(windowOptions);
-
         app.on("ready", () => {
+            this.window = new BrowserWindow(windowOptions);
             const screen = this.screens[0];
             if (screen)
                 this.loadScreen(screen);
         });
-
         app.on("browser-window-created", () => callback());
     }
 
