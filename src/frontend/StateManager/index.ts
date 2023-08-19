@@ -1,4 +1,4 @@
-import { stateManager } from "./StateManager";
+import { StateManager, stateManager } from "./StateManager";
 import { SingleState } from "./SingleState";
 import { ListState } from "./ListState";
 import { StateFactory } from "./StateFactory";
@@ -10,6 +10,7 @@ import { StateLoader } from "./StateLoader";
 
 export {
     stateManager,
+    StateManager,
     SingleState,
     ListState,
     StateFactory,
