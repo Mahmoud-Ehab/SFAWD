@@ -1,4 +1,4 @@
-import { StateManager } from "sfawd";
+import { stateManager } from "sfawd";
 
 type ScreenSizes = {
     mobile_small: number,
@@ -33,9 +33,9 @@ export class MediaQuery {
     }
 
     constructor() {
-        if (StateManager.get("screenWidth") && StateManager.get("screenHeight")) { 
-            this.clientWidth = StateManager.get("screenWidth").toObject().value;
-            this.clientHeight = StateManager.get("screenHeight").toObject().value;
+        if (stateManager.get("screenWidth") && stateManager.get("screenHeight")) { 
+            this.clientWidth = stateManager.get("screenWidth").toObject().value;
+            this.clientHeight = stateManager.get("screenHeight").toObject().value;
         }
         else {
             throw Error("No 'screenWidth' or 'screenHeight' are found in the StateManager.");
