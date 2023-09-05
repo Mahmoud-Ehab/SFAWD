@@ -1,6 +1,6 @@
 {
   "name": "@sfawd/html",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "html UIPainter implementation for SFAWD architecture.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

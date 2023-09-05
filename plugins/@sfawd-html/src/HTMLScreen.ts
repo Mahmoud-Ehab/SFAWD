@@ -26,6 +26,11 @@ export class HTMLScreen extends Screen<HTMLScreenInfo> {
         <meta name="author" content="${info.author || ''}">
     `);
 
+    if (info.httpEquivs) {
+      for (let httpEquiv of info.httpEquivs)
+        this.chunks.push(`<meta http-equiv="${httpEquiv.name}" content="${httpEquiv.content}">`);
+    }
+
     if (info.links) {
       for (let link of info.links)
         this.chunks.push(`<link href="${link.href}" rel="${link.rel}">`);

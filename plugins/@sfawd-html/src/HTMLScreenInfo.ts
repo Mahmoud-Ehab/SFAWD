@@ -13,5 +13,9 @@ export interface HTMLScreenInfo {
     rel: string;
     href: string;
   }>;
+  httpEquivs?: Array<{
+    name: 'content-security-policy' | 'content-type' | 'default-style' | 'refresh';
+    content: string;
+  }>;
   css?: string;
 }
