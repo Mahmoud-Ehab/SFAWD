@@ -34,7 +34,7 @@ export class HTMLScreen extends Screen<HTMLScreenInfo> {
     this.chunks.push("<style>");
     if (info.fonts) {
       for (let font of info.fonts)
-        this.chunks.push(`@font-face {font-family: ${font.fontName}; src: url(${font.url}})`);
+        this.chunks.push(`@font-face {font-family: ${font.fontName}; src: url(${font.url}})}`);
     }
     this.chunks.push(`
       * {
