@@ -5,4 +5,13 @@ export interface HTMLScreenInfo {
   keywords?: string;
   title?: string;
   viewport?: string;
+  fonts?: Array<{
+    fontName: string;
+    url: string;
+  }>;
+  links?: Array<{
+    rel: string;
+    href: string;
+  }>;
+  css?: string;
 }

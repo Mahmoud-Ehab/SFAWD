@@ -13,11 +13,10 @@ export class HTMLScreen extends Screen<HTMLScreenInfo> {
   setRootDir(path: string) {
     this.appRootDir = path;
   }
-  
+
   protected init(info: HTMLScreenInfo): void {
     this.chunks = [];
-    this.chunks.push(
-      `
+    this.chunks.push(`
       <head>
         <title>${info.title || 'No Title'}</title>
         <meta charset="${info.charset || ''}">
@@ -25,35 +24,39 @@ export class HTMLScreen extends Screen<HTMLScreenInfo> {
         <meta name="description" content="${info.description || ''}">
         <meta name="keywords" content="${info.keywords || ''}">
         <meta name="author" content="${info.author || ''}">
+    `);
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    if (info.links) {
+      for (let link of info.links)
+        this.chunks.push(`<link href="${link.href}" rel="${link.rel}">`);
+    }
 
-        <style>
-          * {
-            margin: 0;
-            padding: 0;
-          }
-          html {
-            font-size: 20px;
-          }
-          #root {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-          }
-        </style>
-      </head>
-      <body>
-        <div id="root">
-        </div>
-      </body>
-      <script>exports={}</script>
-      `
-    );
+    this.chunks.push("<style>");
+    if (info.fonts) {
+      for (let font of info.fonts)
+        this.chunks.push(`@font-face {font-family: ${font.fontName}; url: ${font.url}}`);
+    }
+    this.chunks.push(`
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 20px;
+      }
+      #root {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      ${info.css || ""}
+    `);
+    this.chunks.push("</style>");
+    this.chunks.push("</head>");
+    this.chunks.push("<body><div id='root'></div></body>");
+    this.chunks.push('<script>exports={}</script>');
   }
 
   addView(view: HTMLView): void {
