@@ -16,11 +16,15 @@ export abstract class InteractiveView<V extends View<any, any>> extends Extended
 
   setEvent(name: string, callback: InteractiveViewCallback) {
     this.callbacks[name] = [callback];
+    if (this.myView().isDrawn())
+      this.apply();
   }
 
   onEvent(name: string, callback: InteractiveViewCallback) {
     if (this.callbacks[name]) {
       this.callbacks[name].push(callback);
+      if (this.myView().isDrawn())
+        this.apply();
     }
     else {
       throw new Error(`There is no event with name "${name}".`);
