@@ -91,8 +91,10 @@ export abstract class View<D extends ViewData, S extends Object> {
   }
 
   update() {
-    if (!this.drawn)
+    if (!this.drawn) {
+      this.draw();
       return;
+    }
 
     this.drawer.update(this);
     if (this.onUpdateCallback) {

@@ -15,6 +15,18 @@ export abstract class ConstructiveView<V extends View<ViewData, any>> extends Ex
   }
 
   addView(view: ExtendedView<V>) {
+    this.pushView(view);
+    this.update();
+  }
+
+  addViews(...views: ExtendedView<V>[]) {
+    for (let view of views) {
+      this.pushView(view);
+    }
+    this.update();
+  }
+
+  private pushView(view: ExtendedView<V>) {
     const alreadyExist = this.children.find((v) => v === view)
     if (alreadyExist) {
       throw new Error("Cannot add the same view more than once.");
@@ -25,12 +37,6 @@ export abstract class ConstructiveView<V extends View<ViewData, any>> extends Ex
 
     view.myView().setParentId(this.myView().getId());
     this.children.push(view);
-    this.update();
-  }
-
-  addViews(...views: ExtendedView<V>[]) {
-    for (let view of views)
-      this.addView(view);
   }
 
   rmvView(id: string) {
