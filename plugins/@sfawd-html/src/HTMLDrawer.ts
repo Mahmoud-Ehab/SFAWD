@@ -24,6 +24,10 @@ export class HTMLDrawer implements ViewDrawer<HTMLView> {
     const data = view.getData();
     const style = view.getStyle();
 
+    if (typeof document === 'undefined') {
+      throw new Error("Error: HTMLDrawer can only be used within browser environment.");
+    }
+
     if (document.getElementById(data.id)) {
       throw new Error("There is already a view with id: " + data.id);
     }
